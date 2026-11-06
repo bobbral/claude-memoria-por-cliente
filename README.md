@@ -9,7 +9,7 @@ Quem atende vários clientes com o Claude Code esbarra sempre no mesmo problema:
 - **`porteiro.mjs`**: um hook `UserPromptSubmit`. Antes de o Claude responder, ele lê o seu pedido e, se aparecer o nome de um cliente que tem arquivo em `_memoria/clientes/`, avisa o Claude para ler esse arquivo. Os gatilhos vêm do nome do arquivo: `ana-padaria.md` dispara com "ana", "padaria" ou "ana-padaria". Ele ignora acento e maiúscula. Cliente novo é só criar o arquivo.
 - **`mapa.py`**: lista as ligações `[[nome]]` entre os arquivos de memória e aponta os **órfãos**, arquivos em que nenhum outro arquivo aponta e que por isso ficam esquecidos. Com `--html`, gera um grafo interativo.
 
-Uso isso todo dia na operação da minha agência no Rio, com mais de 20 clientes.
+Uso isso todo dia na operação da minha agência no Rio, com 20 arquivos entre clientes e produtos.
 
 ## Como usar
 
